@@ -31,6 +31,7 @@ Route::get('/scan', function () {
 });
 
 Route::post('/scan', [BarcodeController::class, 'scan'])->name('scan.barcode');
-Route::get('/scan-result', [BarcodeController::class, 'scanResult'])->name('scan-result');
+Route::get('/scan-result', [BarcodeController::class, 'scanResult'])->name('scan.result');
+
 
 require __DIR__.'/auth.php';
